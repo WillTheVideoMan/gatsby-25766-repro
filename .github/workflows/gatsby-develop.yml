@@ -6,5 +6,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v1
+      - name: Install modules
+        run: npm ci
       - name: Start Gatsby development server
         run: npm run start
