@@ -1,0 +1,10 @@
+name: Gatsby Develop
+on: [push]
+jobs:
+  gatsby-develop:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Start Gatsby development server
+        run: npm run start
